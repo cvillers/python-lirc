@@ -1,6 +1,6 @@
 // Builds the lirc_client.py module and backing _lirc_client extension.
 
-%module lirc_client
+%module (package="lirc.lirc_internal") lirc_client
 
 %{
 #include <lirc/lirc_client.h>

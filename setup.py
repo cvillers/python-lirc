@@ -38,7 +38,7 @@ setup(
     packages=["lirc.client", "lirc.internal"],
 
     # FIXME the include path should not be hardcoded - offer a LIRC_INCLUDE variable to override
-    ext_modules=[Extension("lirc.internal.lirc_client",
+    ext_modules=[Extension("lirc.internal._lirc_client",
                            ["lirc/internal/lirc_client.i"],
                            swig_opts=["-I/usr/include/lirc"],
                            include_dirs=["/usr/include/lirc"],
