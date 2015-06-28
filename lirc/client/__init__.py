@@ -2,7 +2,8 @@
 Client interface to LIRC using SWIG (see swig/ directory for more details).
 """
 
-import lirc_client, os
+import os
+from lirc.internal import lirc_client
 
 class LircError(Exception):
     def __init__(self, *args, **kwargs):

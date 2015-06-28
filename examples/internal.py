@@ -1,4 +1,7 @@
-import lirc_client, os
+# Demonstrates the low-level wrapper for liblirc_client.
+
+import os
+from lirc.internal import lirc_client
 
 fd = lirc_client.lirc_get_local_socket(None, 1)
 

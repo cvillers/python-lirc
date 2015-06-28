@@ -1,4 +1,7 @@
 .idea/*
 *.py[cod]
 *.o
-*.so
+
+build/*
+MANIFEST
+*.egg_info/*
