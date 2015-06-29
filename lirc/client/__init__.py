@@ -7,7 +7,7 @@ from lirc.internal import lirc_client
 
 class LircError(Exception):
     def __init__(self, *args, **kwargs):
-        super().__init__(args, kwargs)
+        super().__init__(*args, **kwargs)
 
 class LircClient:
     """
